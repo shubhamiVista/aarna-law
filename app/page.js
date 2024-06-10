@@ -1,3 +1,4 @@
+import Footer from '@components/Footer'
 import Insights from '@components/Insights'
 import Navbar from '@components/Navbar'
 import Network from '@components/Network'
@@ -34,6 +35,7 @@ export default function Home() {
       <Testimonials />
       <OurCredentials />
       <Network />
+      <Footer />
     </main>
   )
 }
