@@ -32,17 +32,17 @@ export const podcasts = [
 export const numbers = [
   {
     id: 1,
-    rupees: '$ 14K',
+    rupees: '600+',
     title: 'In dispute',
   },
   {
     id: 2,
-    rupees: '$ 14K',
+    rupees: '300+',
     title: 'Resolved',
   },
   {
     id: 3,
-    rupees: '1K+',
+    rupees: '835+',
     title: 'Clients',
   },
   {
@@ -52,12 +52,12 @@ export const numbers = [
   },
   {
     id: 5,
-    rupees: '5K+',
+    rupees: '1500+',
     title: 'Cases',
   },
   {
     id: 6,
-    rupees: '100+',
+    rupees: '11',
     title: 'Year legacy',
   },
   {

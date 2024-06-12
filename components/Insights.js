@@ -145,7 +145,7 @@ function HomeBanner() {
           <NextArrow />
         </div>
       </div>
-      <div class="px-4 mx-auto max-w-screen-xl text-center overflow-hidden">
+      <div class="px-4 mx-auto max-w-screen-xl overflow-hidden">
         <InsightSlider ref={sliderRef} {...setting} className="z-0 gap-4">
           {insights.map((item) => (
             <InsightsCard key={item.id} cardDetails={item} />
