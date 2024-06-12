@@ -1,6 +1,10 @@
+const flowbite = require('flowbite-react/tailwind')
+const flowbitePlugin = require('flowbite/plugin')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    flowbite.content(),
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -24,6 +28,7 @@ module.exports = {
     },
   },
   plugins: [
+    flowbitePlugin,
     function ({ addUtilities }) {
       addUtilities({
         '.writing-mode-vertical-rl': {

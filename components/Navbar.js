@@ -7,7 +7,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className="bg-white p-4">
+    <div className='w-full relative flex justify-center'>
+    <nav className="bg-white p-4 absolute z-50 my-12 items-center justify-center w-10/12 mx-auto">
       <div className="flex justify-between items-center">
         <Image src="home-page/logo.svg" height={60} width={200} />
         <ul className="flex items-center gap-7 text-custom-blue">
@@ -33,7 +34,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </nav>
+      </nav>
+      </div>
   )
 }
 

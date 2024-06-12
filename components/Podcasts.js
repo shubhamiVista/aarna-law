@@ -8,7 +8,7 @@ const Podcasts = () => {
       <h1 className="text-custom-blue text-2xl font-semibold text-center">
         Podcast
       </h1>
-      <ul className="flex justify-center gap-3">
+      <ul className="flex flex-wrap justify-center gap-3">
         {podcasts.map((item) => (
           <PodcastCard key={item.id} podcastDetails={item} />
         ))}

@@ -1,6 +1,5 @@
 import Footer from '@components/Footer'
 import Insights from '@components/Insights'
-import Navbar from '@components/Navbar'
 import Network from '@components/Network'
 import NumbersSpeak from '@components/NumbersSpeak'
 import OurCredentials from '@components/OurCredentials'
@@ -9,12 +8,14 @@ import Podcasts from '@components/Podcasts'
 import Testimonials from '@components/Testimonials'
 import WhatWeDo from '@components/WhatWeDo'
 
+import HomeBanner from '../components/HomeBanner'
+
 export default function Home() {
   return (
     <main className="">
-      <div className="flex h-screen bg-cover bg-background-image flex-col px-24 py-12">
-        <Navbar />
-        <div className="self-center flex flex-col justify-end items-center mt-40 text-center gap-8">
+      <HomeBanner />
+      {/* <div className="flex flex-col">  */}
+      {/* <div className="self-center flex flex-col justify-end items-center mt-40 text-center gap-8">
           <h1 className="text-white text-[50px] font-semibold">
             Client-Centric Problem Solving
           </h1>
@@ -25,8 +26,8 @@ export default function Home() {
           <button className="bg-white text-custom-red px-6 py-2 hover:bg-custom-red hover:text-white">
             Contact Us
           </button>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
       <Insights />
       <Podcasts />
       <WhatWeDo />
