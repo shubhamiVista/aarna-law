@@ -1,23 +1,22 @@
 'use client'
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import InsightSlider from 'react-slick'
+import InsightsCard from './InsightsCard'
+import { insights } from '@utils/data'
+import { leftArrow, rightArrow } from '@utils/Icon'
+
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import Image from 'next/image'
-import Link from 'next/link'
-import InsightsCard from './InsightsCard'
-import { leftArrow, rightArrow } from '@utils/Icon'
-import { insights } from '@utils/data'
 
 function HomeBanner() {
   const sliderRef = useRef(null)
 
-  const NextArrow = ({ onClick }) => (
+  const NextArrow = () => (
     <div
-      className="transform -translate-y-1/2 right-4 z-10 cursor-pointer"
+      className="cursor-pointer bg-custom-blue text-white text-xl p-3 rounded-full hover:bg-custom-red"
       onClick={() => sliderRef.current.slickNext()}
     >
-      <svg
+      {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         width="48"
         height="48"
@@ -59,16 +58,17 @@ function HomeBanner() {
             </g>
           </g>
         </g>
-      </svg>
+      </svg> */}
+      {rightArrow}
     </div>
   )
 
   const PrevArrow = () => (
     <div
-      className=" transform -translate-y-1/2 left-4 z-10 cursor-pointer"
+      className="cursor-pointer bg-custom-blue text-white text-xl p-3 rounded-full hover:bg-custom-red"
       onClick={() => sliderRef.current.slickPrev()}
     >
-      <svg
+      {/* <svg
         id="Group_49401"
         data-name="Group 49401"
         xmlns="http://www.w3.org/2000/svg"
@@ -101,17 +101,18 @@ function HomeBanner() {
             />
           </g>
         </g>
-      </svg>
+      </svg> */}
+      {leftArrow}
     </div>
   )
 
   var setting = {
-    speed: 400,
+    speed: 500,
     slidesToShow: 2,
     initialSlide: 2,
     slidesToScroll: 1,
     fade: false,
-    autoplay: true,
+    autoplay: false,
     arrow: false,
     dots: false,
 
@@ -135,7 +136,7 @@ function HomeBanner() {
   }
 
   return (
-    <div className="flex items-center gap-10 bg-white -mt-24 ml-24 p-10 z-50">
+    <div className="flex bg-white absolute left-0 right-0 items-center gap-10 -mt-24 ml-24 p-10">
       <div className="flex flex-col items-center gap-7">
         <h1 className="text-custom-red writing-mode-vertical-rl transform rotate-180 text-[80px] font-bold m-0 p-0">
           Insights
@@ -146,7 +147,7 @@ function HomeBanner() {
         </div>
       </div>
       <div class="px-4 mx-auto max-w-screen-xl overflow-hidden">
-        <InsightSlider ref={sliderRef} {...setting} className="z-0 gap-4">
+        <InsightSlider ref={sliderRef} {...setting} className="">
           {insights.map((item) => (
             <InsightsCard key={item.id} cardDetails={item} />
           ))}

@@ -4,7 +4,7 @@ import React from 'react'
 const InsightsCard = ({ cardDetails }) => {
   const { imageUrl, title, desc } = cardDetails
   return (
-    <div class="w-[510px] h-[535px] bg-white border z-20 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+    <div class="w-[510px] h-[535px] bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
       <Image src={imageUrl} width={1000} height={500} className="w-full" />
       <div class="p-5 flex flex-col items-start flex-grow">
         <h5 class="text-2xl text-custom-blue font-semibold flex-grow">

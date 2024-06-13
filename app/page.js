@@ -12,7 +12,7 @@ import HomeBanner from '../components/HomeBanner'
 
 export default function Home() {
   return (
-    <main className="">
+    <div className="">
       <HomeBanner />
       {/* <div className="flex flex-col">  */}
       {/* <div className="self-center flex flex-col justify-end items-center mt-40 text-center gap-8">
@@ -29,6 +29,7 @@ export default function Home() {
         </div> */}
       {/* </div> */}
       <Insights />
+
       <Podcasts />
       <WhatWeDo />
       <OurLegacy />
@@ -37,6 +38,6 @@ export default function Home() {
       <OurCredentials />
       <Network />
       <Footer />
-    </main>
+    </div>
   )
 }

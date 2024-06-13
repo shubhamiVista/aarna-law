@@ -32,7 +32,7 @@ const Network = () => {
           </div>
         </div>
       </div> */}
-      <div className="relative">
+      <div className="relative w-full">
         <div className="w-10/12 mx-auto">
           <Image
             src="/home-page/world-map.svg"
@@ -42,8 +42,8 @@ const Network = () => {
             alt="World Map"
           />
         </div>
-        <div className="absolute transform -translate-x-1/2 -translate-y-1/2 bottom-1/3 left-2/3">
-          <div className="space-y-8">
+        <div className="absolute  bottom-[45%] left-[58%]">
+          <div className="space-y-7 ms-5">
             {/* <button className="px-3 py-1 bg-custom-red text-white">
               New Delhi
             </button> */}
@@ -51,7 +51,7 @@ const Network = () => {
             <button
               data-popover-target="new-delhi"
               type="button"
-              class="text-white bg-custom-red hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium text-sm px-5 py-1.5 text-center dark:bg-custom-red dark:hover:bg-red-700 dark:focus:ring-red-700"
+              class="text-white bg-custom-red hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium text-sm px-5 py-1 text-center dark:bg-custom-red dark:hover:bg-red-700 dark:focus:ring-red-700"
             >
               New Delhi
             </button>
@@ -78,7 +78,7 @@ const Network = () => {
               <div data-popper-arrow></div>
             </div>
 
-            <div className="flex gap-3 justify-center ms-10">
+            <div className="flex gap-3 justify-center ms-6">
               {/* <button className="px-3 py-1 bg-custom-red text-white">
                 Mumbai
               </button> */}
@@ -87,7 +87,7 @@ const Network = () => {
                 data-popover-target="popover-bottom"
                 data-popover-placement="bottom"
                 type="button"
-                class="text-white bg-custom-red hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium text-sm px-5 py-1.5 text-center dark:bg-custom-red dark:hover:bg-red-700 dark:focus:ring-red-700"
+                class="text-white bg-custom-red hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium text-sm px-5 py-1 text-center dark:bg-custom-red dark:hover:bg-red-700 dark:focus:ring-red-700"
               >
                 Mumbai
               </button>
@@ -118,7 +118,7 @@ const Network = () => {
                 data-popover-target="popover-bottom-a"
                 data-popover-placement="bottom"
                 type="button"
-                class="text-white bg-custom-red hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium text-sm px-5 py-1.5 text-center dark:bg-custom-red dark:hover:bg-red-700 dark:focus:ring-red-700"
+                class="text-white bg-custom-red hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium text-sm px-5 py-1 text-center dark:bg-custom-red dark:hover:bg-red-700 dark:focus:ring-red-700"
               >
                 Bengaluru
               </button>

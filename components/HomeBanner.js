@@ -38,7 +38,7 @@ function HomeBanner() {
   }
 
   return (
-    <section class="text-center z-0 w-full mx-auto overflow-hidden h-screen">
+    <section class="text-center relative w-full mx-auto overflow-hidden h-screen">
       <Navbar />
       <div class="text-center">
         <BannerSlider {...setting} className="z-0">
