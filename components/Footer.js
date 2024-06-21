@@ -25,28 +25,28 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <button className="border border-custom-red px-6 py-2 text-white hover:bg-white hover:border-white hover:text-custom-red">
+            <button className="border border-custom-red md:px-6 px-2 py-2 text-white hover:bg-white hover:border-white hover:text-custom-red">
               Subscribe to newsletter
             </button>
           </div>
         </div>
       </div>
-      <div className="bg-[#091F48] px-20 py-5">
+      <div className="bg-[#091F48] md:px-20 py-5">
         <div className="flex flex-col gap-2 justify-between items-center">
           <div className="flex gap-2">
-            <span className="text-white text-sm flex items-center">
+            <span className="text-white text-xs md:text-sm flex items-center">
               Privacy Policy
             </span>
-            <span className="text-white text-sm">|</span>
-            <span className="text-white text-sm flex items-center">
+            <span className="text-white text-xs md:text-sm">|</span>
+            <span className="text-white text-xs md:text-sm flex items-center">
               Terms & Conditions
             </span>
-            <span className="text-white text-sm">|</span>
-            <span className="text-white text-sm flex items-center">
+            <span className="text-white text-xs md:text-sm">|</span>
+            <span className="text-white text-xs md:text-sm flex items-center">
               Disclaimer
             </span>
           </div>
-          <span className="text-white text-sm">
+          <span className="text-white text-xs md:text-sm">
             © 2024 Aarna Law. All Rights Reserved
           </span>
         </div>

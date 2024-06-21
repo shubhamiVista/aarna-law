@@ -16,18 +16,26 @@ const PodcastCard = ({ podcastDetails }) => {
   }
 
   return (
-    <li className="w-[585px] h-[177px] shadow-lg">
-      <div className="flex h-full">
-        <img src={imageUrl} width={201} height={150} alt="" />
-        <div className="p-4 flex flex-col justify-between h-full">
+    <li className="w-full md:w-[585px] h-[auto] shadow-lg">
+      <div className="flex flex-col md:flex-row items-center h-full">
+        <img
+          src={imageUrl}
+          width={201}
+          height={150}
+          alt=""
+          className="md:w-48 md:h-auto"
+        />
+        <div className="p-4 flex flex-col justify-between flex-1">
           <h1
-            className="text-custom-blue text-2xl font-semibold"
+            className="text-custom-blue text-center md:text-start text-xl md:text-2xl font-semibold mb-4 md:mb-0"
             dangerouslySetInnerHTML={{ __html: title.rendered }}
           />
-          <div className="flex justify-between items-center w-full">
-            <p className="text-custom-gray">Posted On {formattedDate}</p>
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-custom-gray mb-4 md:mb-0">
+              Posted On {formattedDate}
+            </p>
             <button
-              className="bg-custom-blue text-white p-3 rounded-full hover:bg-custom-red"
+              className="bg-custom-blue text-white p-3 rounded-full hover:bg-custom-red md:ml-4"
               onClick={handlePlayPause}
             >
               {isPlaying ? pause : play}
@@ -35,7 +43,7 @@ const PodcastCard = ({ podcastDetails }) => {
           </div>
         </div>
       </div>
-      <audio ref={audioRef} src={player_link} />
+      <audio ref={audioRef} src={player_link} className="hidden md:block" />
     </li>
   )
 }
