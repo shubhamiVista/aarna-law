@@ -14,6 +14,7 @@ const Navbar = () => {
               height={60}
               width={200}
               alt="aarnalaw-logo"
+              className="w-32 md:w-48"
             />
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
