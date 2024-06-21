@@ -1,6 +1,5 @@
-import { numbers } from '@utils/data'
-import React from 'react'
-import NumbersSpeakItem from './NumbersSpeakItem'
+import { numbers } from "@utils/data"
+import NumbersSpeakItem from "./NumbersSpeakItem"
 
 const NumbersSpeak = () => {
   return (
@@ -8,7 +7,7 @@ const NumbersSpeak = () => {
       <h1 className="text-custom-red text-2xl font-semibold">
         Our Track Record by Numbers
       </h1>
-      <ul className="flex justify-center gap-6">
+      <ul className="flex justify-center flex-wrap gap-6 p-2">
         {numbers.map((item) => (
           <NumbersSpeakItem key={item.id} numberDetails={item} />
         ))}

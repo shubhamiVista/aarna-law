@@ -1,14 +1,14 @@
-import Footer from '@components/Footer'
-import Insights from '@components/Insights'
-import Network from '@components/Network'
-import NumbersSpeak from '@components/NumbersSpeak'
-import OurCredentials from '@components/OurCredentials'
-import OurLegacy from '@components/OurLegacy'
-import Podcasts from '@components/Podcasts'
-import Testimonials from '@components/Testimonials'
-import WhatWeDo from '@components/WhatWeDo'
+import Footer from "@components/Footer"
+import Insights from "@components/Insights"
+import Network from "@components/Network"
+import NumbersSpeak from "@components/NumbersSpeak"
+import OurCredentials from "@components/OurCredentials"
+import OurLegacy from "@components/OurLegacy"
+import Podcasts from "@components/Podcasts"
+import Testimonials from "@components/Testimonials"
+import WhatWeDo from "@components/WhatWeDo"
 
-import HomeBanner from '../components/HomeBanner'
+import HomeBanner from "../components/HomeBanner"
 
 export default function Home() {
   return (

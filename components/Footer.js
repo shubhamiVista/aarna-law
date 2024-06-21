@@ -1,14 +1,19 @@
-import { linkedIn, spotify } from '@utils/Icon'
-import Image from 'next/image'
-import React from 'react'
+import { linkedIn, spotify } from "@utils/Icon"
+import Image from "next/image"
+import React from "react"
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-custom-blue px-20 py-7">
+      <div className="bg-custom-blue px-5 md:px-20 py-7">
         <div className="flex justify-between items-center">
           <div className="space-y-4">
-            <Image src="/home-page/logo-white.svg" width={200} height={60} />
+            <Image
+              src="/home-page/logo-white.svg"
+              width={200}
+              height={60}
+              alt=""
+            />
             <div className="flex gap-2">
               <span className="font-semibold text-white text-xl flex items-center">
                 Linked{linkedIn}
@@ -27,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-[#091F48] px-20 py-5">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col gap-2 justify-between items-center">
           <div className="flex gap-2">
             <span className="text-white text-sm flex items-center">
               Privacy Policy

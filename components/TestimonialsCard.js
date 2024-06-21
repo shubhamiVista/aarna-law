@@ -9,6 +9,7 @@ const TestimonialsCard = ({ testimonialDetails }) => {
           width={60}
           height={60}
           className="rounded-full"
+          alt=""
         />
 
         <div>

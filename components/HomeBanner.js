@@ -1,11 +1,11 @@
-'use client'
-import React, { useState, useRef, useEffect } from 'react'
-import BannerSlider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import Image from 'next/image'
-import Link from 'next/link'
-import Navbar from '@components/Navbar'
+"use client"
+import React, { useState, useRef, useEffect } from "react"
+import BannerSlider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Image from "next/image"
+import Link from "next/link"
+import Navbar from "@components/Navbar"
 
 function HomeBanner() {
   var setting = {
@@ -38,18 +38,18 @@ function HomeBanner() {
   }
 
   return (
-    <section class="text-center relative w-full mx-auto overflow-hidden h-screen">
+    <section className="text-center relative w-full mx-auto overflow-hidden md:h-screen">
       <Navbar />
-      <div class="text-center">
+      <div className="text-center">
         <BannerSlider {...setting} className="z-0">
-          {/* Your slides go here */}
-
           <div>
             <Image
               src="/home-page/home-banner-1.jpg"
               className="w-full h-auto z-0"
               width={800}
               height={150}
+              alt=""
+              priority
             />
           </div>
           <div>
@@ -58,6 +58,8 @@ function HomeBanner() {
               className="w-full h-auto z-0"
               width={800}
               height={150}
+              alt=""
+              priority
             />
           </div>
           <div>
@@ -66,6 +68,8 @@ function HomeBanner() {
               className="w-full h-auto z-0"
               width={800}
               height={150}
+              alt=""
+              priority
             />
           </div>
 
